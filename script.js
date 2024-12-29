@@ -82,7 +82,7 @@ btn.addEventListener("click",()=>{
 		   if(e.target.closest(".box").textContent.length==0){
 			   e.target.closest(".box").textContent = "0"
 			   message.textContent = `${b}, you're up`
-			    let b = ""
+			    let a = ""
 			   let c = ""
 			   let d = ""
 			   let x = ""
@@ -92,7 +92,7 @@ btn.addEventListener("click",()=>{
 			   let k = ""
 			   for(let i=0; i<=box.length-1; i++){
 				   if(i==0 || i==1 || i==2){
-					   b+=box[i].textContent;
+					   a+=box[i].textContent;
 				   }
 				   if(i==0|| i==3||i==6){ 
 					   c+=box[i].textContent;
@@ -116,13 +116,13 @@ btn.addEventListener("click",()=>{
 					   k+=box[i].textContent;
 				   }
 			   } 
-			   if(b=="000" || c=="000" ||d=="000" ||x=="000"||f=="000"||g=="000"||h=="000"||k=="000"){ 
+			   if(a=="000" || c=="000" ||d=="000" ||x=="000"||f=="000"||g=="000"||h=="000"||k=="000"){ 
 					   message.textContent = `${b} is Winner`
 				    grid1.removeEventListener("click",call)
 				   }
 			   j++
 		   }else{
-			   j;
+			   j; 
 		   }
 	   }
    }
