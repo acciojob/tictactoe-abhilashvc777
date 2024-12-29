@@ -35,6 +35,7 @@ btn.addEventListener("click",()=>{
 		   if(e.target.closest(".box").textContent.length==0){
 			   e.target.closest(".box").textContent = "x"
 			   message.textContent = `${a}, you're up`
+			   j++
 		   }else{
 			   j;
 		   }
@@ -43,15 +44,17 @@ btn.addEventListener("click",()=>{
 		   if(e.target.closest(".box").textContent.length==0){
 			   e.target.closest(".box").textContent = "0"
 			   message.textContent = `${b}, you're up`
+			   j++
 		   }else{
 			   j;
 		   }
 	   }
+	   if(j==9){
+	   for(let i=0; i<box.length; i++){
+		   console.log(box[i].textContent)
+	   }
+	   }
    }
-
-
-		
-	grid1.addEventListener("click",call}
-	
-	
+	grid1.addEventListener("click",call)
+ }
 }) 
