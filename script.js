@@ -1,5 +1,5 @@
 //your JS code here. If required.
-const child = document.querySelector(".child")
+const child = document.querySelector(".child") 
 const btn = document.querySelector("#submit")
 const player1_input = document.querySelector("#player-1")
 const player2_input = document.querySelector("#player-2")
