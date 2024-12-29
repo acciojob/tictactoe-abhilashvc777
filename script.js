@@ -31,28 +31,50 @@ btn.addEventListener("click",()=>{
     const message = document.querySelector(".message")
 	let j = 0;
    function call(e){
-	   if(j==0||j==2||j==4||j==6||j==8){
+	   if(j==0||j==2||j==4||j==6||j==8){ 
 		   if(e.target.closest(".box").textContent.length==0){
 			   e.target.closest(".box").textContent = "x"
 			   message.textContent = `${a}, you're up`
+			   let b = ""
+			   let c = ""
+			   let d = ""
+			   let e = ""
+			   let f = ""
+			   for(let i=0; i<=box.length-1; i++){
+				   if(i==0 || i==1 || i==2){
+					   b+=box[i].textContent;
+				   }
+				   if(i==0|| i==3||i==6){ 
+					   c+=box[i].textContent;
+				   }
+				   if(i==0||i==5||i==9){
+					   d+=box[i].textContent;
+				   }
+				   if(i==1||i==4||i==7){
+					   e+=box[i].textContent;
+				   }
+				   if(i==2||i==5||i==8){
+					   f+=box[i].textContent;
+				   }
+				   
+			   } 
+			   if(b=="xxx" || c=="xxx" ||d=="xxx" ||e=="xxx"||f=="xxx"){ 
+					   message.textContent = `${a} is Winner`
+				   }
 			   j++
 		   }else{
 			   j;
-		   }
+		   }  
 	   }
 	   if(j==1||j==3||j==5||j==7){
 		   if(e.target.closest(".box").textContent.length==0){
 			   e.target.closest(".box").textContent = "0"
 			   message.textContent = `${b}, you're up`
+			   
 			   j++
 		   }else{
 			   j;
 		   }
-	   }
-	   if(j==9){
-	   for(let i=0; i<box.length; i++){
-		   console.log(box[i].textContent)
-	   }
 	   }
    }
 	grid1.addEventListener("click",call)
