@@ -70,7 +70,7 @@ btn.addEventListener("click",()=>{
 				   }
 			   } 
 			   if(b=="xxx" || c=="xxx" ||d=="xxx" ||x=="xxx"||f=="xxx"||g=="xxx"||h=="xxx"||k=="xxx"){ 
-					   message.textContent = `${a} Congratulations you won!`
+					   message.textContent = `${a} congratulations you won!`
 				   box.forEach((el)=>{
 					   if(el.textContent=="x"){
 						   el.style.backgroundColor="#800080"
@@ -122,7 +122,7 @@ btn.addEventListener("click",()=>{
 				   }
 			   } 
 			   if(a=="000" || c=="000" ||d=="000" ||x=="000"||f=="000"||g=="000"||h=="000"||k=="000"){ 
-					   message.textContent = `${b} Congratulations you won!`
+					   message.textContent = `${b} congratulations you won!`
 				    box.forEach((el)=>{
 					   if(el.textContent=="0"){
 						   el.style.backgroundColor="#800080"
