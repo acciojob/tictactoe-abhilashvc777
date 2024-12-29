@@ -19,8 +19,8 @@ const grid = `<h1>TIC TAC TOE</h1>
 			<div class="box"></div>
 		 <div>`
 btn.addEventListener("click",()=>{
-	let a = player1_input.value
-	let b = player2_input.value
+	let player1 = player1_input.value
+	let player2 = player2_input.value
 	console.log(a.length,b.length)
 	if(!a.length && !b.length){
 		message.textContent = "Please give right input"
@@ -34,7 +34,7 @@ btn.addEventListener("click",()=>{
 	   if(j==0||j==2||j==4||j==6||j==8){  
 		   if(e.target.closest(".box").textContent.length==0){
 			   e.target.closest(".box").textContent = "x"
-			   message.innerText = a +", you're up"
+			   message.innerText = player1 +", you're up"
 			   let b = ""
 			   let c = ""
 			   let d = ""
@@ -70,7 +70,7 @@ btn.addEventListener("click",()=>{
 				   }
 			   } 
 			   if(b=="xxx" || c=="xxx" ||d=="xxx" ||x=="xxx"||f=="xxx"||g=="xxx"||h=="xxx"||k=="xxx"){ 
-					   message.innerText = a+" congratulations you won!"
+					   message.innerText = player1+" congratulations you won!"
 				   box.forEach((el)=>{
 					   if(el.textContent=="x"){
 						   el.style.backgroundColor="#800080"
@@ -86,7 +86,7 @@ btn.addEventListener("click",()=>{
 	   if(j==1||j==3||j==5||j==7){
 		   if(e.target.closest(".box").textContent.length==0){
 			   e.target.closest(".box").textContent = "0"
-			   message.innerText = b +", you're up"
+			   message.innerText = player2 +", you're up"
 			    let a = ""
 			   let c = ""
 			   let d = ""
@@ -122,7 +122,7 @@ btn.addEventListener("click",()=>{
 				   }
 			   } 
 			   if(a=="000" || c=="000" ||d=="000" ||x=="000"||f=="000"||g=="000"||h=="000"||k=="000"){ 
-					   message.innerText = b+" congratulations you won!"
+					   message.innerText = player2+" congratulations you won!"
 				    box.forEach((el)=>{
 					   if(el.textContent=="0"){
 						   el.style.backgroundColor="#800080"
