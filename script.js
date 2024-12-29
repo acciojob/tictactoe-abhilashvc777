@@ -85,47 +85,70 @@ btn.addEventListener("click",()=>{
 	   if(j==1||j==3||j==5||j==7){
 		   if(e.target.closest(".box").textContent.length==0){
 			   e.target.closest(".box").textContent = "0"
-			   message.innerText = Player2 +", you're up"
-			    let a = ""
+			   message.innerText = Player2+", you're up"
+			   let a = ""
+			   let arr = []
 			   let c = ""
+			   let arr1 = []
 			   let d = ""
+			   let arr2 = []
 			   let x = ""
+			   let arr3 = []
 			   let f = ""
+			   let arr4 = []
 			   let g = ""
+			   let arr5 = []
 			   let h = ""
+			   let arr6 = []
 			   let k = ""
+			   let arr7 = []
 			   for(let i=0; i<=box.length-1; i++){
 				   if(i==0 || i==1 || i==2){
 					   a+=box[i].textContent;
+					   arr.push(i)
 				   }
 				   if(i==0|| i==3||i==6){ 
 					   c+=box[i].textContent;
+					   arr1.push(i)
 				   }
 				   if(i==0||i==4||i==8){
 					   d+=box[i].textContent;
+					   arr2.push(i)
 				   }
 				   if(i==1||i==4||i==7){
 					   x+=box[i].textContent;
+					   arr3.push(i)
 				   }
 				   if(i==2||i==5||i==8){
 					   f+=box[i].textContent;
+					   arr4.push(i)
 				   }
 				   if(i==3||i==4||i==5){
 					   g+=box[i].textContent; 
+					   arr5.push(i)
 				   }
 				   if(i==6||i==7||i==8){
 					   h+=box[i].textContent;
+					   arr6.push(i)
 				   } 
 				   if(i==2||i==4||i==6){
 					   k+=box[i].textContent;
+					   arr7.push(i)
 				   }
 			   } 
 			   if(a=="000" || c=="000" ||d=="000" ||x=="000"||f=="000"||g=="000"||h=="000"||k=="000"){ 
 					   message.innerText = Player2+" congratulations you won!"
-				    box.forEach((el)=>{
-					   if(el.textContent=="0"){
-						   el.style.backgroundColor="#800080"
+				   console.log(a,c,d,x,f,g,h,k)
+				   console.log(arr,arr1,arr2,arr3,arr4,arr5,arr6,arr7)
+					   let xyz = [a,c,d,x,f,g,h,k]
+				   [a,c,d,x,f,g,h,k] = [arr,arr1,arr2,arr3,arr4,arr5,arr6,arr7]
+				   let abc;
+				    xyz.filter((el)=>{
+					   if(el=="000"){
+						   abc = el
+						   // el.style.backgroundColor="#800080"
 					   }
+                   
 					})
 				    grid1.removeEventListener("click",call)
 				   }
