@@ -28,15 +28,30 @@ btn.addEventListener("click",()=>{
 	child.innerHTML = grid
 	const box = document.querySelectorAll(".box")
 	const grid1 = document.querySelector(".grid")
-	grid1.addEventListener("click",(e)=>{
-	for(let i=0; i<arr.length; i++){
-		if(i==0 || i==2 || i==4 || i==6 || i==8){
-			message.textContent = `${a},`
-		}
-	
-	}
-	})
-	}
+    const message = document.querySelector(".message")
+	let j = 0;
+   function call(e){
+	   if(j==0||j==2||j==4||j==6||j==8){
+		   if(e.target.closest(".box").textContent.length==0){
+			   e.target.closest(".box").textContent = "x"
+			   message.textContent = `${a}, you're up`
+		   }else{
+			   j;
+		   }
+	   }
+	   if(j==1||j==3||j==5||j==7){
+		   if(e.target.closest(".box").textContent.length==0){
+			   e.target.closest(".box").textContent = "0"
+			   message.textContent = `${b}, you're up`
+		   }else{
+			   j;
+		   }
+	   }
+   }
+
+
+		
+	grid1.addEventListener("click",call}
 	
 	
 }) 
