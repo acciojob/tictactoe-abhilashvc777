@@ -50,8 +50,12 @@ button{
 	font-weight:800;
 }
 .message{
-	text-align:center;
+	/* border:1px solid red; */
 	font-size:1.4em; 
-	color:red;
-	padding:5px;
+	color:red; 
+	height:50px;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	align-items:center;
 }
