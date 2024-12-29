@@ -21,7 +21,7 @@ const grid = `<h1>TIC TAC TOE</h1>
 btn.addEventListener("click",()=>{
 	let Player1 = player1_input.value
 	let Player2 = player2_input.value
-	if(!player1.length && !player2.length){
+	if(!Player1.length && !Player2.length){
 		message.textContent = "Please give right input"
 	}else{
 	child.innerHTML = grid
