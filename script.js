@@ -5,7 +5,7 @@ const player1_input = document.querySelector("#player1")
 const player2_input = document.querySelector("#player2")
 const message = document.querySelector(".message")
 
-const grid = `<h1>TIC TAC TOE</h1>
+const grid = `<h1>Tic Tac Toe</h1>
 	         <div class="message"></div>
             <div class="grid">
 			<div class="box"></div>
@@ -29,7 +29,7 @@ btn.addEventListener("click",()=>{
 	const grid1 = document.querySelector(".grid")
     const message = document.querySelector(".message")
 	let j = 0;
-   function call(e){
+   function call(e){ 
 	   if(j==0||j==2||j==4||j==6||j==8){  
 		   if(e.target.closest(".box").textContent.length==0){
 			   e.target.closest(".box").textContent = "x"
