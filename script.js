@@ -1,8 +1,8 @@
 //your JS code here. If required.
 const child = document.querySelector(".child") 
 const btn = document.querySelector("#submit")
-const player1_input = document.querySelector("#player-1")
-const player2_input = document.querySelector("#player-2")
+const player1_input = document.querySelector("#player1")
+const player2_input = document.querySelector("#player2")
 const message = document.querySelector(".message")
 
 const grid = `<h1>TIC TAC TOE</h1>
