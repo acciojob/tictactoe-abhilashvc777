@@ -70,7 +70,7 @@ btn.addEventListener("click",()=>{
 				   }
 			   } 
 			   if(b=="xxx" || c=="xxx" ||d=="xxx" ||x=="xxx"||f=="xxx"||g=="xxx"||h=="xxx"||k=="xxx"){ 
-					   message.textContent = `${a} is Winner`
+					   message.textContent = `${a} Congratulations you won!`
 				    grid1.removeEventListener("click",call)
 				   }
 			   j++
@@ -117,7 +117,7 @@ btn.addEventListener("click",()=>{
 				   }
 			   } 
 			   if(a=="000" || c=="000" ||d=="000" ||x=="000"||f=="000"||g=="000"||h=="000"||k=="000"){ 
-					   message.textContent = `${b} is Winner`
+					   message.textContent = `${b} Congratulations you won!`
 				    grid1.removeEventListener("click",call)
 				   }
 			   j++
