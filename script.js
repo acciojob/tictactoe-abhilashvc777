@@ -116,7 +116,7 @@ btn.addEventListener("click",()=>{
 				   }
 				   if(i==6||i==7||i==8){
 					   h+=box[i].textContent;
-				   }
+				   } 
 				   if(i==2||i==4||i==6){
 					   k+=box[i].textContent;
 				   }
@@ -124,14 +124,14 @@ btn.addEventListener("click",()=>{
 			   if(a=="000" || c=="000" ||d=="000" ||x=="000"||f=="000"||g=="000"||h=="000"||k=="000"){ 
 					   message.textContent = `${b} Congratulations you won!`
 				    box.forEach((el)=>{
-					   if(el.textContent=="x"){
+					   if(el.textContent=="0"){
 						   el.style.backgroundColor="#800080"
 					   }
 					})
 				    grid1.removeEventListener("click",call)
 				   }
-			   j++
-		   }else{
+			   j++ 
+		   }else{ 
 			   j; 
 		   }
 	   }
